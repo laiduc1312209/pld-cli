@@ -109,32 +109,6 @@ pld -s photo.jpg pd
 #### View Upload History
 ```bash
 pld --list
-```
-
-### Output Example
-
-After a successful upload, you'll see:
-
-```
-╔═══════════════════════════════════════╗
-║       📤 PLD CLI - File Upload 📤     ║
-╚═══════════════════════════════════════╝
-
-📁 File: document.pdf
-📊 Size: 2.5 MB
-🌐 Service: Gofile
-
-✔ Upload complete! ✨
-
-╔═══════════════════════════════════════╗
-║         Upload Successful! 🎉         ║
-╚═══════════════════════════════════════╝
-
-🔗 Download Link:
-   https://gofile.io/d/abc123xyz
-
-✓ Link copied to clipboard!
-```
 
 ## 🗂️ File Structure
 
