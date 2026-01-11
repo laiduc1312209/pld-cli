@@ -1,19 +1,19 @@
-# PLD CLI - File Sharing Tool
+# 📤 PLD CLI - File Sharing Tool
 
 A beautiful and professional command-line tool for uploading and sharing files instantly using Pixeldrain, Gofile, and Google Drive. Features a gorgeous terminal UI with colors, loading animations, automatic clipboard integration, upload history tracking, and secure API key management.
 
-## Features
+## ✨ Features
 
-- **Lightning Fast** - Upload files instantly with streaming support for large files
-- **Beautiful Terminal UI** - Gorgeous interface with colors, animations, and smooth progress indicators
-- **Auto Clipboard** - Download links automatically copied to your clipboard
-- **Upload History** - Track all your uploads with timestamps and file info
-- **Secure & Private** - API keys stored locally. All uploads use HTTPS
-- **Memory Efficient** - Handles files of any size without consuming excessive memory
-- **Multi Service Support** - Choose between Gofile, Pixeldrain, and Google Drive for uploads
-- **Open Source** - Free and open-source software on GitHub
+- 🚀 **Lightning Fast** - Upload files instantly with streaming support for large files
+- 🎨 **Beautiful Terminal UI** - Gorgeous interface with colors, animations, and smooth progress indicators
+- 📋 **Auto Clipboard** - Download links automatically copied to your clipboard
+- 📊 **Upload History** - Track all your uploads with timestamps and file info
+- 🔐 **Secure & Private** - API keys stored locally and encrypted. All uploads use HTTPS
+- 💾 **Memory Efficient** - Handles files of any size without consuming excessive memory
+- 🔄 **Multi Service Support** - Choose between Gofile, Pixeldrain, and Google Drive for uploads
+- 💻 **Open Source** - Free and open-source software on GitHub
 
-## Installation
+## 📦 Installation
 
 ### Scoop (Recommended)
 
@@ -48,7 +48,7 @@ npm install
 npm link
 ```
 
-## Quick Start
+## 🚀 Quick Start
 
 ### Step 1: Configure API Key
 
@@ -60,7 +60,7 @@ pld --config
 You'll be prompted to select a service and enter your credentials:
 - **Gofile** - Get your API key at [Gofile API](https://gofile.io/api) (optional, can upload anonymously)
 - **Pixeldrain** - Get your API key at [Pixeldrain API Keys](https://pixeldrain.com/user/api_keys)
-- **Google Drive** - Requires OAuth setup (see Google Drive Setup below)
+- **Google Drive** - Requires OAuth setup (see [Google Drive Setup](#-google-drive-setup) below)
 
 Your credentials will be securely stored in `~/.pld/config.json`
 
@@ -81,7 +81,7 @@ Upload a file to Google Drive:
 pld -s video.mp4 gd
 ```
 
-## Usage
+## 📖 Usage
 
 ### Available Commands
 
@@ -126,7 +126,7 @@ pld -s video.mp4 gd
 pld -ls
 ```
 
-## Google Drive Setup
+## 🔷 Google Drive Setup
 
 To use Google Drive, you need to create OAuth 2.0 credentials:
 
@@ -161,7 +161,7 @@ After authorization, you can upload files to Google Drive using:
 pld -s <file> gd
 ```
 
-## Supported Services
+## 📡 Supported Services
 
 | Service | Flag | API Key Required | Notes |
 |---------|------|------------------|-------|
@@ -169,7 +169,7 @@ pld -s <file> gd
 | Pixeldrain | `pd` | Required | Free tier: 10GB limit, limited upload speed |
 | Google Drive | `gd` | OAuth Required | 15GB free storage |
 
-## File Structure
+## 🗂️ File Structure
 
 The tool creates a `.pld` directory in your home folder to store configuration and history:
 
@@ -179,7 +179,7 @@ The tool creates a `.pld` directory in your home folder to store configuration a
 └── history.json   # Upload history (last 50 uploads)
 ```
 
-## Technical Details
+## 🛠️ Technical Details
 
 ### Dependencies
 
@@ -196,11 +196,11 @@ The tool creates a `.pld` directory in your home folder to store configuration a
 
 - Your API keys and tokens are stored locally in `~/.pld/config.json`
 - Never share your config file with others
-- API keys are never logged or displayed in full
+- The API key is never logged or displayed
 - All uploads are encrypted in transit (HTTPS)
 - Google Drive uses OAuth 2.0 with refresh tokens
 
-## Features in Detail
+## 📝 Features in Detail
 
 ### Upload History
 
@@ -217,14 +217,14 @@ View your history anytime with `pld -ls`
 
 For large files, you'll see a real-time progress indicator:
 ```
-Uploading... 45% [2.5 MB/s] ETA: 30s
+⠹ Uploading... 45% [2.5 MB/s] ETA: 30s
 ```
 
 ### Clipboard Integration
 
 Every successful upload automatically copies the download link to your clipboard - just paste it anywhere!
 
-## Troubleshooting
+## 🐛 Troubleshooting
 
 ### Command not found after installation
 
@@ -270,11 +270,22 @@ If you encounter authorization errors:
 - Use absolute paths for files outside the current directory
 - Ensure the file exists and is readable
 
-## License
+## 🎯 Roadmap
+
+Future features planned:
+- [ ] Multiple file upload support
+- [ ] Custom expiry time for uploads
+- [ ] Download files from services
+- [ ] File encryption before upload
+- [ ] Upload to custom folders/collections
+- [ ] Export history to CSV
+- [x] Support for more file sharing services (Google Drive)
+
+## 📄 License
 
 MIT
 
-## Links
+## 🔗 Links
 
 - **GitHub**: [github.com/laiduc1312209/pld-cli](https://github.com/laiduc1312209/pld-cli)
 - **Gofile**: [gofile.io](https://gofile.io)
@@ -283,6 +294,6 @@ MIT
 
 ---
 
-Made with love for easy file sharing
+Made with ❤️ for easy file sharing
 
 **Get Started:** `pld --config`
