@@ -1271,7 +1271,7 @@ if (options.config) {
   console.log(chalk.cyan('  ██║     ███████╗██████╔╝    ╚██████╗███████╗██║'));
   console.log(chalk.cyan('  ╚═╝     ╚══════╝╚═════╝      ╚═════╝╚══════╝╚═╝'));
   console.log('\n');
-  console.log(chalk.white('  Version: ') + chalk.green('1.0.0'));
+  console.log(chalk.white('  Version: ') + chalk.green('1.0.1'));
   console.log(chalk.white('  Author: ') + chalk.yellow('laiduc1312'));
   console.log('\n');
   console.log(chalk.white('  📡 Supported Services:'));
